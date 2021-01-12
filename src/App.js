@@ -44,7 +44,7 @@ class App extends Component {
     
     
     return(
-      <Router basename={window.location.pathname || ''}>
+      <Router basename={process.env.PUBLIC_URL}>
         <Container className="p-0 background" fluid={true}>
         <Navbar className="border-bottom" bg="transparent" expand="lg">
           {/* <Navbar.Brand className="text-white" to="/">Gentrit Bejta</Navbar.Brand> */}
