@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-import {BrowserRouter as Router,Route,Link} from 'react-router-dom';
+// import {BrowserRouter as Router,Route,Link} from 'react-router-dom';
+import {BrowserRouter , Link , Route} from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
@@ -44,7 +45,7 @@ class App extends Component {
     
     
     return(
-      <Router basename={window.location.pathname || ''}>
+      <BrowserRouter basename={window.location.pathname || ''}>
         <Container className="p-0 background" fluid={true}>
         <Navbar className="border-bottom" bg="transparent" expand="lg">
           {/* <Navbar.Brand className="text-white" to="/">Gentrit Bejta</Navbar.Brand> */}
@@ -68,7 +69,7 @@ class App extends Component {
 
         </Container>
         
-      </Router>
+      </BrowserRouter>
     )
 
   }
